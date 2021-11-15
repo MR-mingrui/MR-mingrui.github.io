@@ -74,7 +74,7 @@
     <article id="post-GitHub部署博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2021-11-15T17:41:52.000Z" itemprop="datePublished">2021-11-16</time>
+  <time class="dt-published" datetime="2021-11-15T18:15:52.000Z" itemprop="datePublished">2021-11-16</time>
 </a>
     
   </div>
@@ -93,7 +93,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><ul>
+        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><ul>
 <li>登录 github 账号，新建一个空仓库（注：名字一定要使用<code>账号昵称.github.io </code>的格式）</li>
 <li>记录仓库地址，后面要用</li>
 </ul>
@@ -108,7 +108,7 @@
 <li>复制密匙：打开<code>id_rsa.pub </code>复制所有内容，文件路径是刚刚提到的：<code>根目录/../../.s sh </code>，每个人用户名都不一样，所以路径我使用<code>.. </code>代替。</li>
 <li>绑定密匙：打开 github，点开用户头像展开，点击 Settings，找到SSH and GPG keys，New 一个 key 。将刚刚复制的内容放入  SSH keys 里，标题随意。</li>
 <li>连接到 github：<code>ssh -T git@github.com </code>，输入 yes 确定连接</li>
-<li>验证身份：git邮箱<code>git config --global user.email 电子邮箱 </code>，git昵称<code>git config --global user.name 昵称 </code></li>
+<li>初始化 git：设置git邮箱<code>git config --global user.email 电子邮箱 </code>，设置git名字<code>git config --global user.name 名字 </code></li>
 </ul>
 </li>
 <li><p>部署到远端：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d </code></p>
@@ -118,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw0ywem2000060cz1dfa7jtm" data-title="GitHub部署博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw0zli640000goczdtj3fcq4" data-title="GitHub部署博客" class="article-share-link">Share</a>
       
       
       
@@ -133,7 +133,7 @@
     <article id="post-搭建本地博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2021-11-15T17:40:46.000Z" itemprop="datePublished">2021-11-16</time>
+  <time class="dt-published" datetime="2021-11-15T18:14:46.000Z" itemprop="datePublished">2021-11-16</time>
 </a>
     
   </div>
@@ -173,16 +173,15 @@
 <li><p>新建一篇博客：<code>hexo n &quot;博客名&quot; </code>，新建完成后会显示出博客的地址，可以直接去想应地址进行修改保存后再部署</p>
 </li>
 <li><p>部署博客到本地：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s </code></p>
-<blockquote>
-<p><code>hexo cl </code> #清除缓存文件 db.json 和已生成的静态文件 public<br><code>hexo g </code> #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写)<br><code>hexo d </code> #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写)<br><code>hexo s </code># server 启动本地服务器 localhost:4000即可访问</p>
-</blockquote>
 </li>
 </ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`hexo cl ` #清除缓存文件 db.json 和已生成的静态文件 public</span><br><span class="line">`hexo g ` #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写) </span><br><span class="line">`hexo d ` #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写) </span><br><span class="line">`hexo s `# server 启动本地服务器 localhost:4000即可访问</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw0ywem9000260cz2pxn5umy" data-title="搭建本地博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw0zli6b0002goczeezi2iyg" data-title="搭建本地博客" class="article-share-link">Share</a>
       
       
       
@@ -233,7 +232,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw0ywem7000160czcujc12c9" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw0zli690001gocz45ls2a6n" data-title="Hello World" class="article-share-link">Share</a>
       
       
       

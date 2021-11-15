@@ -13,8 +13,8 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前期准备GitHub 登录 github 账号，新建一个空仓库（注：名字一定要使用账号昵称.github.io 的格式） 记录仓库地址，后面要用  部署到 GitHub （使用 Git Bash ） 安装git部署插件：cnpm install --save hexo-deployer-git   修改站点配置文件_config.yml ，到文件的最底部，补全如下内容：（注意空格） 1234dep">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-11-15T17:41:52.000Z">
-<meta property="article:modified_time" content="2021-11-15T17:54:44.958Z">
+<meta property="article:published_time" content="2021-11-15T18:15:52.000Z">
+<meta property="article:modified_time" content="2021-11-15T18:14:31.710Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -76,7 +76,7 @@
         <section id="main"><article id="post-GitHub部署博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2021-11-15T17:41:52.000Z" itemprop="datePublished">2021-11-16</time>
+  <time class="dt-published" datetime="2021-11-15T18:15:52.000Z" itemprop="datePublished">2021-11-16</time>
 </a>
     
   </div>
@@ -95,7 +95,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><ul>
+        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><ul>
 <li>登录 github 账号，新建一个空仓库（注：名字一定要使用<code>账号昵称.github.io </code>的格式）</li>
 <li>记录仓库地址，后面要用</li>
 </ul>
@@ -110,7 +110,7 @@
 <li>复制密匙：打开<code>id_rsa.pub </code>复制所有内容，文件路径是刚刚提到的：<code>根目录/../../.s sh </code>，每个人用户名都不一样，所以路径我使用<code>.. </code>代替。</li>
 <li>绑定密匙：打开 github，点开用户头像展开，点击 Settings，找到SSH and GPG keys，New 一个 key 。将刚刚复制的内容放入  SSH keys 里，标题随意。</li>
 <li>连接到 github：<code>ssh -T git@github.com </code>，输入 yes 确定连接</li>
-<li>验证身份：git邮箱<code>git config --global user.email 电子邮箱 </code>，git昵称<code>git config --global user.name 昵称 </code></li>
+<li>初始化 git：设置git邮箱<code>git config --global user.email 电子邮箱 </code>，设置git名字<code>git config --global user.name 名字 </code></li>
 </ul>
 </li>
 <li><p>部署到远端：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d </code></p>
@@ -120,7 +120,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw0ywem2000060cz1dfa7jtm" data-title="GitHub部署博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw0zli640000goczdtj3fcq4" data-title="GitHub部署博客" class="article-share-link">Share</a>
       
       
       
