@@ -71,6 +71,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-更改部署到Gitee" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/21/%E6%9B%B4%E6%94%B9%E9%83%A8%E7%BD%B2%E5%88%B0Gitee/" class="article-date">
+  <time class="dt-published" datetime="2021-11-21T05:13:11.000Z" itemprop="datePublished">2021-11-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/21/%E6%9B%B4%E6%94%B9%E9%83%A8%E7%BD%B2%E5%88%B0Gitee/">更改部署到Gitee</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>注：若你已部署过GitHub，那么可直接观看本博客</p>
+<h2 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h2><ul>
+<li>登录 gitee 账号，新建一个空仓库，可以直接从github导入（注：名字一定要使用<code>账号昵称.github.io </code>的格式）</li>
+<li>记录仓库地址，后面要用</li>
+<li>在仓库的services选项中开启仓库的Pages服务</li>
+</ul>
+<h2 id="添加密匙"><a href="#添加密匙" class="headerlink" title="添加密匙"></a>添加密匙</h2><ul>
+<li>复制密匙：打开<code>id_rsa.pub </code>复制所有内容，文件路径是刚刚提到的：<code>根目录/../../.s sh </code>，每个人用户名都不一样，所以路径我使用<code>.. </code>代替。</li>
+<li>绑定密匙：打开 gitee，点开用户头像，点击 个人主页，点开仓库，点击管理，找到部署公钥，添加公钥 。将刚刚复制的内容放入指定位置</li>
+</ul>
+<h2 id="修改Hexo配置文件-config-yml"><a href="#修改Hexo配置文件-config-yml" class="headerlink" title="修改Hexo配置文件_config.yml "></a>修改Hexo配置文件<code>_config.yml </code></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#repo: ’github 仓库地址’</span><br><span class="line">repo: ’gitee 仓库地址’</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署推送到Gitee"><a href="#部署推送到Gitee" class="headerlink" title="部署推送到Gitee"></a>部署推送到Gitee</h2><p>经典三件套：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d </code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/21/%E6%9B%B4%E6%94%B9%E9%83%A8%E7%BD%B2%E5%88%B0Gitee/" data-id="ckw8scd7w0004k0cz4ont3l64" data-title="更改部署到Gitee" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-live2d网页动漫人物" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/" class="article-date">
@@ -132,7 +183,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/" data-id="ckw8rwzt200038kczb5ee58vj" data-title="live2d网页动漫人物" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/" data-id="ckw8scd7s0001k0cz1835a5ts" data-title="live2d网页动漫人物" class="article-share-link">Share</a>
       
       
       
@@ -191,7 +242,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw8rwzsu00008kczg2d99q5x" data-title="GitHub部署博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw8scd7n0000k0czavrthi2l" data-title="GitHub部署博客" class="article-share-link">Share</a>
       
       
       
@@ -254,7 +305,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw8rwzt100028kczhrkq2wji" data-title="搭建本地博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw8scd7w0003k0czcf2uch6w" data-title="搭建本地博客" class="article-share-link">Share</a>
       
       
       
@@ -305,7 +356,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw8rwzsz00018kczcq2ohuvl" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw8scd7u0002k0cz0ccp2cvu" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -346,6 +397,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/11/21/%E6%9B%B4%E6%94%B9%E9%83%A8%E7%BD%B2%E5%88%B0Gitee/">更改部署到Gitee</a>
+          </li>
         
           <li>
             <a href="/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/">live2d网页动漫人物</a>
