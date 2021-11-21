@@ -31,6 +31,12 @@
       
       
       
+        <tags>
+            
+            <tag> 网站基建 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -43,6 +49,12 @@
         <content type="html"><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><p>注：若你已部署过GitHub，那么可直接观看本博客</p><h2 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h2><ul><li>登录 gitee 账号，新建一个空仓库，可以直接从github导入（注：名字一定要使用<code>账号昵称.github.io </code>的格式）</li><li>记录仓库地址，后面要用</li><li>在仓库的services选项中开启仓库的Pages服务</li></ul><h2 id="添加密匙"><a href="#添加密匙" class="headerlink" title="添加密匙"></a>添加密匙</h2><ul><li>复制密匙：打开<code>id_rsa.pub </code>复制所有内容，文件路径是刚刚提到的：<code>根目录/../../.s sh </code>，每个人用户名都不一样，所以路径我使用<code>.. </code>代替。</li><li>绑定密匙：打开 gitee，点开用户头像，点击 个人主页，点开仓库，点击管理，找到部署公钥，添加公钥 。将刚刚复制的内容放入指定位置</li></ul><h2 id="修改Hexo配置文件-config-yml"><a href="#修改Hexo配置文件-config-yml" class="headerlink" title="修改Hexo配置文件_config.yml "></a>修改Hexo配置文件<code>_config.yml </code></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#repo: ’github 仓库地址’</span><br><span class="line">repo: ’gitee 仓库地址’</span><br></pre></td></tr></table></figure><h2 id="部署推送到Gitee"><a href="#部署推送到Gitee" class="headerlink" title="部署推送到Gitee"></a>部署推送到Gitee</h2><p>经典三件套：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d </code></p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 网站基建 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -57,6 +69,12 @@
       
       
       
+        <tags>
+            
+            <tag> 网站基建 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -70,6 +88,12 @@
       
       
       
+        <tags>
+            
+            <tag> 网站基建 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -82,6 +106,12 @@
         <content type="html"><![CDATA[<h1 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><ul><li><a href="https://nodejs.org/en/">官网</a>下载：LTS</li><li>查询 node 和 npm 的版本：<code>node -v </code>，<code>npm -v </code></li><li>更换阿里源：<code>npm install -g cnpm --registry=//registry.npm.taobao.org </code></li></ul><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><ul><li>安装 hexo：<code>cnpm install -g hexo-cli </code></li><li>查询 hexo 版本：<code>hexo -v </code></li></ul><h2 id="Git（为后面部署到github准备）"><a href="#Git（为后面部署到github准备）" class="headerlink" title="Git（为后面部署到github准备）"></a>Git（为后面部署到github准备）</h2><ul><li><a href="https://git-scm.com/download/win">下载 Git </a>：疯狂 next，期间有一个选项选择 Use Git from Git Bash only</li><li>从此刻开始，命令行转到 Git Bash 操作，原因：安装git附送的终端，比cmd终端好用，可以使用linux语法</li></ul><h1 id="搭建并部署到本地"><a href="#搭建并部署到本地" class="headerlink" title="搭建并部署到本地"></a>搭建并部署到本地</h1><ul><li><p>新建一个文件夹 blog：<code>mkdir blog </code></p></li><li><p>初始化 hexo：<code>hexo init </code></p></li><li><p>新建一篇博客：<code>hexo n &quot;博客名&quot; </code>，新建完成后会显示出博客的地址，可以直接去想应地址进行修改保存后再部署</p></li><li><p>部署博客到本地：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s </code></p></li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`hexo cl ` #清除缓存文件 db.json 和已生成的静态文件 public</span><br><span class="line">`hexo g ` #生成网站静态文件到默认设置的 public 文件夹(hexo generate 的缩写) </span><br><span class="line">`hexo d ` #自动生成网站静态文件，并部署到设定的仓库(hexo deploy 的缩写) </span><br><span class="line">`hexo s `# server 启动本地服务器 localhost:4000即可访问</span><br></pre></td></tr></table></figure>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 网站基建 </tag>
+            
+        </tags>
       
     </entry>
     
