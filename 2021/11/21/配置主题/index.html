@@ -6,13 +6,19 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>归档：2021/11 | rui的破站</title>
+  <title>配置主题 | rui的破站</title>
   <meta name="author" content="rui">
+  
+  <meta name="description" content="对主题配置文件进行修改修改themes/*/_config.yml
+增加标签页和分类页
+
+在menu下添加如下（注意缩进）：
+12345678- title: 分类  url: categories  intro: &amp;quot;所有的分类。&amp;quot;  icon: &amp;quot;fa fa-fold">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="配置主题"/>
   <meta property="og:site_name" content="rui的破站"/>
 
   
@@ -107,161 +113,124 @@ var _hmt = _hmt || [];
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title"><i class="fa fa-archive"></i> 2021/11</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2021">2021<b class="caret"></b></h4>
-			<ul id="2021" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-21 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/21/配置主题/" >配置主题</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-21 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/21/更换网站主题/" >更换网站主题</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-21 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/21/更改部署到Gitee/" >更改部署到Gitee</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-21 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/21/live2d网页动漫人物/" >live2d网页动漫人物</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-16 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/16/GitHub部署博客/" >GitHub部署博客</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2021-11-16 </span> &raquo;
-		
-		   <span class="title"><a href="/2021/11/16/搭建本地博客/" >搭建本地博客</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> 配置主题</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-		
-			
-	<div class="widget">
-		<h4>标签云</h4>
-		<ul class="tag_box inline list-unstyled">		
-		
-			<li><a href="/tags/网站基建/">网站基建<span>1</span></a></li>
-		
-		 
-		</ul>
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="对主题配置文件进行修改"><a href="#对主题配置文件进行修改" class="headerlink" title="对主题配置文件进行修改"></a>对主题配置文件进行修改</h1><h2 id="修改themes-config-yml"><a href="#修改themes-config-yml" class="headerlink" title="修改themes/*/_config.yml"></a>修改<code>themes/*/_config.yml</code></h2><ul>
+<li><p>增加标签页和分类页</p>
+<ul>
+<li><p>在menu下添加如下（注意缩进）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- title: 分类</span><br><span class="line">  url: categories</span><br><span class="line">  intro: &quot;所有的分类。&quot;</span><br><span class="line">  icon: &quot;fa fa-folder&quot;</span><br><span class="line">- title: 标签</span><br><span class="line">  url: tags</span><br><span class="line">  intro: &quot;所有的标签。&quot;</span><br><span class="line">  icon: &quot;fa fa-tags&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>hexo n page categories &amp;&amp; hexo n page tags</code>：blog/source下将会生成对应两个文件夹</p>
+</li>
+<li><p>在文件夹下index文件里添加<code>type: &quot;对应类型&quot; </code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2021-11-21 16:55:56</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li></li>
+</ul>
+	  
 	</div>
 
+	<div>
+  	<center>
+	<div class="pagination">
 
-		
-			
-<div class="widget">
-  <h4>最新文章</h4>
-  <ul class="entry list-unstyled">
     
-      <li>
-        <a href="/2021/11/21/配置主题/" ><i class="fa fa-file-o"></i>配置主题</a>
-      </li>
     
-      <li>
-        <a href="/2021/11/21/更换网站主题/" ><i class="fa fa-file-o"></i>更换网站主题</a>
-      </li>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>上一页</a>
     
-      <li>
-        <a href="/2021/11/21/更改部署到Gitee/" ><i class="fa fa-file-o"></i>更改部署到Gitee</a>
-      </li>
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-      <li>
-        <a href="/2021/11/21/live2d网页动漫人物/" ><i class="fa fa-file-o"></i>live2d网页动漫人物</a>
-      </li>
+    <a href="/2021/11/21/更换网站主题/" type="button" class="btn btn-default ">下一页<i
+                class="fa fa-arrow-circle-o-right"></i></a>
     
-      <li>
-        <a href="/2021/11/16/GitHub部署博客/" ><i class="fa fa-file-o"></i>GitHub部署博客</a>
-      </li>
+
     
-  </ul>
 </div>
 
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">留言</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
 		
-			
-<div class="widget">
-	<h4>链接</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class="fa fa-github"></i><a href="https://github.com/MR-mingrui" title="我的GitHub" target="_blank">我的GitHub</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://luffyblog.top/" title="位邦的小破站" target="_blank">路飞的小破站</a></li>
-	
-	</ul>
-</div>
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2021-11-21 
+	</div>
+	
 
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/网站基建/">网站基建<span>1</span></a></li>
+    </ul>
+	</div>
 		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
 
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+var disqus_shortname = 'myyerrol';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
 
 
 

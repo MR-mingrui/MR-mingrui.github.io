@@ -135,6 +135,46 @@ var _hmt = _hmt || [];
 <div class="row">
 	<div class="col-md-8">
 		<h3 class="title">
+			<a href="/2021/11/21/配置主题/" >配置主题</a>
+		</h3>
+		</div>
+	<div class="col-md-4">
+		<div class="date">post @ 2021-11-21  </div>
+		</div>
+	</div>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="对主题配置文件进行修改"><a href="#对主题配置文件进行修改" class="headerlink" title="对主题配置文件进行修改"></a>对主题配置文件进行修改</h1><h2 id="修改themes-config-yml"><a href="#修改themes-config-yml" class="headerlink" title="修改themes/*/_config.yml"></a>修改<code>themes/*/_config.yml</code></h2><ul>
+<li><p>增加标签页和分类页</p>
+<ul>
+<li><p>在menu下添加如下（注意缩进）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- title: 分类</span><br><span class="line">  url: categories</span><br><span class="line">  intro: &quot;所有的分类。&quot;</span><br><span class="line">  icon: &quot;fa fa-folder&quot;</span><br><span class="line">- title: 标签</span><br><span class="line">  url: tags</span><br><span class="line">  intro: &quot;所有的标签。&quot;</span><br><span class="line">  icon: &quot;fa fa-tags&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>hexo n page categories &amp;&amp; hexo n page tags</code>：blog/source下将会生成对应两个文件夹</p>
+</li>
+<li><p>在文件夹下index文件里添加<code>type: &quot;对应类型&quot; </code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2021-11-21 16:55:56</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li></li>
+</ul>
+
+	
+	</div>
+  <a type="button" href="/2021/11/21/配置主题/#more" class="btn btn-default more">阅读此文</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->
+<div class="row">
+	<div class="col-md-8">
+		<h3 class="title">
 			<a href="/2021/11/21/更换网站主题/" >更换网站主题</a>
 		</h3>
 		</div>
@@ -154,7 +194,6 @@ var _hmt = _hmt || [];
 <li>选择一款喜欢的主题，根据主题内的教程进行下载</li>
 <li>下载完毕后进入在blog根目录配置文件(_config.yml)中进行如下修改<code>theme: 下载主题的名字 </code></li>
 <li>经典三件套：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo d </code></li>
-<li>主题配置：进入blog目录下的theme文件夹，找到主题的(_config.yml)文件，根据你下载主题的教程进行相关修改</li>
 </ul>
 
 	
@@ -400,12 +439,26 @@ var _hmt = _hmt || [];
 			
 		
 			
+	<div class="widget">
+		<h4>标签云</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/网站基建/">网站基建<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
 
 		
 			
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2021/11/21/配置主题/" ><i class="fa fa-file-o"></i>配置主题</a>
+      </li>
     
       <li>
         <a href="/2021/11/21/更换网站主题/" ><i class="fa fa-file-o"></i>更换网站主题</a>
@@ -421,10 +474,6 @@ var _hmt = _hmt || [];
     
       <li>
         <a href="/2021/11/16/GitHub部署博客/" ><i class="fa fa-file-o"></i>GitHub部署博客</a>
-      </li>
-    
-      <li>
-        <a href="/2021/11/16/搭建本地博客/" ><i class="fa fa-file-o"></i>搭建本地博客</a>
       </li>
     
   </ul>
