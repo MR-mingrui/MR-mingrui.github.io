@@ -71,6 +71,79 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-live2d网页动漫人物" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/" class="article-date">
+  <time class="dt-published" datetime="2021-11-21T04:19:08.000Z" itemprop="datePublished">2021-11-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/">live2d网页动漫人物</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="人物插件安装与使用"><a href="#人物插件安装与使用" class="headerlink" title="人物插件安装与使用"></a>人物插件安装与使用</h1><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p><code>npm i --save hexo-helper-live2d </code></p>
+<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>安装模型插件：<code>npm install live2d-widget-model-shizuku </code></p>
+<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>在blog根目录配置文件(_config.yml)中添加如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true </span><br><span class="line">  scriptFrom: local </span><br><span class="line">  pluginRootPath: live2dw/ </span><br><span class="line">  pluginJsPath: lib/ </span><br><span class="line">  pluginModelPath: assets/ </span><br><span class="line">  tagMode: false </span><br><span class="line">  log: false </span><br><span class="line">  model: </span><br><span class="line">    use: live2d-widget-model-shizuku #更换模型需要在这里进行修改</span><br><span class="line">  display: </span><br><span class="line">    position: right </span><br><span class="line">    width: 150 </span><br><span class="line">    height: 300 </span><br><span class="line">  mobile: </span><br><span class="line">    show: true </span><br><span class="line">  react: </span><br><span class="line">    opacity: 0.7</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="第四步（可跳过）"><a href="#第四步（可跳过）" class="headerlink" title="第四步（可跳过）"></a>第四步（可跳过）</h2><p>查看已安装插件：<code>npm list </code></p>
+<p>安装模型：<code>npm install packagename </code></p>
+<p>卸载模型：<code>npm uninstall packagename </code></p>
+<p>更换模型：修改第三步中的配置文件</p>
+<p>packgename:</p>
+<ul>
+<li><code>live2d-widget-model-chitose</code></li>
+<li><code>live2d-widget-model-epsilon2_1</code></li>
+<li><code>live2d-widget-model-gf</code></li>
+<li><code>live2d-widget-model-haru/01</code>（使用<code>npm install --save live2d-widget-model-haru</code>）</li>
+<li><code>live2d-widget-model-haru/02</code>（使用<code>npm install --save live2d-widget-model-haru</code>）</li>
+<li><code>live2d-widget-model-haruto</code></li>
+<li><code>live2d-widget-model-hibiki</code></li>
+<li><code>live2d-widget-model-hijiki</code></li>
+<li><code>live2d-widget-model-izumi</code></li>
+<li><code>live2d-widget-model-koharu</code></li>
+<li><code>live2d-widget-model-miku</code></li>
+<li><code>live2d-widget-model-ni-j</code></li>
+<li><code>live2d-widget-model-nico</code></li>
+<li><code>live2d-widget-model-nietzsche</code></li>
+<li><code>live2d-widget-model-nipsilon</code></li>
+<li><code>live2d-widget-model-nito</code></li>
+<li><code>live2d-widget-model-shizuku</code></li>
+<li><code>live2d-widget-model-tororo</code></li>
+<li><code>live2d-widget-model-tsumiki</code></li>
+<li><code>live2d-widget-model-unitychan</code></li>
+<li><code>live2d-widget-model-wanko</code></li>
+<li><code>live2d-widget-model-z16</code></li>
+</ul>
+<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>部署本地查看效果：<code>hexo cl &amp;&amp; hexo g &amp;&amp; hexo s </code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/" data-id="ckw8qfirp00017wczehvi60kn" data-title="live2d网页动漫人物" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-GitHub部署博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" class="article-date">
@@ -118,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw8pxi1a0000bccz4kxsdt1d" data-title="GitHub部署博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" data-id="ckw8qfirl00007wczc2ome3sw" data-title="GitHub部署博客" class="article-share-link">Share</a>
       
       
       
@@ -181,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw8pxi1i0002bcczcuooeij3" data-title="搭建本地博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2/" data-id="ckw8qfirw00037wcze6y1hh8s" data-title="搭建本地博客" class="article-share-link">Share</a>
       
       
       
@@ -232,7 +305,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw8pxi1f0001bcczggzk2via" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/11/16/hello-world/" data-id="ckw8qfirs00027wcz5ohh1hrf" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -273,6 +346,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/11/21/live2d%E7%BD%91%E9%A1%B5%E5%8A%A8%E6%BC%AB%E4%BA%BA%E7%89%A9/">live2d网页动漫人物</a>
+          </li>
         
           <li>
             <a href="/2021/11/16/GitHub%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/">GitHub部署博客</a>
@@ -333,5 +410,5 @@
 
 
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/nipsilon.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 </html>
