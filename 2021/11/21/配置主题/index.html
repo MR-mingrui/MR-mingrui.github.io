@@ -10,10 +10,11 @@
   <meta name="author" content="rui">
   
   <meta name="description" content="对主题配置文件进行修改修改themes/*/_config.yml
-增加标签页和分类页
+增加标签页
 
 在menu下添加如下（注意缩进）：
-12345678- title: 分类  url: categories  intro: &amp;quot;所有的分类。&amp;quot;  icon: &amp;quot;fa fa-fold">
+1234- title: 标签  url: tags  intro: &amp;quot;所有的标签。&amp;quot;  icon: &amp;quot;fa fa-tags&amp;quot;
+hexo n ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -86,12 +87,6 @@ var _hmt = _hmt || [];
 		  </li>
 		  
 		  <li>
-			<a href="/categories" title="所有的分类。">
-			  <i class="fa fa-folder"></i>分类
-			</a>
-		  </li>
-		  
-		  <li>
 			<a href="/tags" title="所有的标签。">
 			  <i class="fa fa-tags"></i>标签
 			</a>
@@ -134,17 +129,16 @@ var _hmt = _hmt || [];
 	  		
 
 	  <h1 id="对主题配置文件进行修改"><a href="#对主题配置文件进行修改" class="headerlink" title="对主题配置文件进行修改"></a>对主题配置文件进行修改</h1><h2 id="修改themes-config-yml"><a href="#修改themes-config-yml" class="headerlink" title="修改themes/*/_config.yml"></a>修改<code>themes/*/_config.yml</code></h2><ul>
-<li><p>增加标签页和分类页</p>
+<li><p>增加标签页</p>
 <ul>
 <li><p>在menu下添加如下（注意缩进）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- title: 分类</span><br><span class="line">  url: categories</span><br><span class="line">  intro: &quot;所有的分类。&quot;</span><br><span class="line">  icon: &quot;fa fa-folder&quot;</span><br><span class="line">- title: 标签</span><br><span class="line">  url: tags</span><br><span class="line">  intro: &quot;所有的标签。&quot;</span><br><span class="line">  icon: &quot;fa fa-tags&quot;</span><br></pre></td></tr></table></figure></li>
-<li><p><code>hexo n page categories &amp;&amp; hexo n page tags</code>：blog/source下将会生成对应两个文件夹</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- title: 标签</span><br><span class="line">  url: tags</span><br><span class="line">  intro: &quot;所有的标签。&quot;</span><br><span class="line">  icon: &quot;fa fa-tags&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>hexo n page tags</code>：blog/source下将会生成对应文件夹</p>
 </li>
 <li><p>在文件夹下index文件里添加<code>type: &quot;对应类型&quot; </code>：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2021-11-21 16:55:56</span><br><span class="line">type: &quot;tags&quot;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2021-11-21 16:55:56</span><br><span class="line">layout: tags</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
-<li></li>
 </ul>
 	  
 	</div>
